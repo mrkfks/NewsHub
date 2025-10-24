@@ -3,13 +3,6 @@ node_modules/
 package-lock.json
 yarn.lock
 
-# Environment Variables
-.env
-.env.local
-.env.development
-.env.test
-.env.production
-
 # Build Output
 dist/
 build/

@@ -1,4 +1,5 @@
 import swaggerJsdoc from 'swagger-jsdoc';
+import path from 'path';
 
 const options: swaggerJsdoc.Options = {
     definition: {
@@ -171,7 +172,12 @@ const options: swaggerJsdoc.Options = {
             }
         ]
     },
-    apis: ['./src/routes/*.ts'] // Route dosyalarındaki JSDoc yorumlarını okur
+    apis: [
+        path.join(__dirname, '../routes/authRoutes.ts'),
+        path.join(__dirname, '../routes/newsRoutes.ts'),
+        path.join(__dirname, '../routes/commentRoutes.ts'),
+        path.join(__dirname, '../routes/adminRoutes.ts')
+    ]
 };
 
 export const swaggerSpec = swaggerJsdoc(options);
