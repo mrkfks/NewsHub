@@ -1,13 +1,14 @@
 import { NextFunction, Request, Response } from "express";
 import { verifyToken } from "../utils/jwtUtility";
 import { errorResult } from "../models/result";
+import { eRoles } from "../utils/eRoles";
 
 
 declare global {
     namespace Express {
         interface Request {
             userId?: string;
-            userRole?: string;
+            userRole?: eRoles;
         }
     }
 }

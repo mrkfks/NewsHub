@@ -98,6 +98,9 @@
 </div>
 
 <script>
+(function() {
+    'use strict';
+    
     const token = localStorage.getItem('accessToken');
     
     if (!token) {
@@ -361,4 +364,10 @@
             alert('Haber silinirken hata oluştu!');
         }
     }
+    
+    // Global scope'a fonksiyonları ekle (inline event handlers için)
+    window.changeUserRole = changeUserRole;
+    window.deleteUser = deleteUser;
+    window.deleteNews = deleteNews;
+})(); // IIFE sonu
 </script>

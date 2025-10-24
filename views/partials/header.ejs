@@ -54,7 +54,8 @@
                     '<li class="nav-item"><a class="nav-link py-1" href="/admin" style="font-size: 0.9rem;"><i class="fas fa-shield-alt"></i> Admin</a></li>' : ''}
                 ${(user.role === 'Admin' || user.role === 'Moderator') ? 
                     '<li class="nav-item"><a class="nav-link py-1" href="/news/create" style="font-size: 0.9rem;"><i class="fas fa-plus"></i> Haber Ekle</a></li>' : ''}
-                <li class="nav-item"><a class="nav-link py-1" href="/my-news" style="font-size: 0.9rem;">Haberlerim</a></li>
+                ${(user.role === 'Admin' || user.role === 'Moderator') ? 
+                    '<li class="nav-item"><a class="nav-link py-1" href="/my-news" style="font-size: 0.9rem;">Haberlerim</a></li>' : ''}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle py-1" href="#" data-bs-toggle="dropdown" style="font-size: 0.9rem;">
                         <i class="fas fa-user"></i> ${user.name}

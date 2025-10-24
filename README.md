@@ -387,15 +387,6 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 
 ---
 
-## 👤 İletişim
-
-Proje Sahibi - [@your-username](https://github.com/your-username)
-
-Proje Linki: [https://github.com/your-username/newshub](https://github.com/your-username/newshub)
-
----
-
-## 🙏 Teşekkürler
 
 - [Node.js](https://nodejs.org/)
 - [Express.js](https://expressjs.com/)
@@ -405,5 +396,3 @@ Proje Linki: [https://github.com/your-username/newshub](https://github.com/your-
 - [Swagger](https://swagger.io/)
 
 ---
-
-**⭐ Projeyi beğendiyseniz yıldız vermeyi unutmayın!**
